@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Portfolio</title>
+</head>
+<body>
+<nav>
+<a href="#" id="formLink">Student Details Form</a>
+<a href="Portfolio.html" >Student Portfolio</a>
+</nav>
+<div id="webform">
+<h1>Student Details Form</h1>
+<p id="thank-you-message">
+    Thank you for contacting us. We will be in touch with you very soon.
+  </p>
+<form>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br><br>
+
+<label for="USN">USN:</label><br>
+<input type="text" id="usn" name="usn"><br><br>
+<label for="Branch" >Branch:</label><br>
+<input type="text" id="branch" name="branch"><br><br>
+<div style="text-align: center;padding:20px ;"><input type="submit" value="SUBMIT" ></form></div>
+</div>
+
+    
+<script>
+document.getElementById('formLink').addEventListener('click', function(e) {
+e.preventDefault();
+document.getElementById('webform').style.display = 'block';
+document.getElementById('portfolio').style.display = 'none';
+e.target.classList.add('active');
+document.getElementById('portfolioLink').classList.remove('active');
+});
+document.getElementById('portfolioLink').addEventListener('click', function(e) {
+e.preventDefault();
+document.getElementById('webform').style.display = 'none';
+document.getElementById('portfolio').style.display = 'block';
+e.target.classList.add('active');
+document.getElementById('formLink').classList.remove('active');
+});
+const form = document.querySelector('form');
+const thankYouMessage = document.querySelector('#thank-you-message');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  thankYouMessage.classList.add('show');
+  setTimeout(() => form.submit(), 2000);
+});
+</script>
+</body>
+</html>

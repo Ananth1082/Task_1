@@ -1,0 +1,81 @@
+*{
+    margin-block: 1%;
+}
+
+
+.rcorners_id {
+    background-image: url("profile_banner.png");
+    border-radius: 25px;
+    border: 2px solid #73AD21; 
+    width: 67%;
+    height: 35%; 
+    float: left;
+    padding-top: 7%;
+    position: absolute;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width:100%;
+  }
+  .contact{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    height: 50%; 
+    font-weight: bolder;
+
+  }
+  
+  .id{
+    background-color: white;
+    padding-left: 30%;
+    padding-top:4%;
+    padding-bottom: 2%;
+  }
+  .circle {
+    position: absolute;
+    height: 24%;
+    width: 12%;
+    background-image: url("Me_Photo_page-0001.jpg");
+    object-fit: fill;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    z-index: 3;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+  .rcorners_schooling {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    float: right;
+    width: 30%;
+    padding: 10px;
+    height: 50%; 
+    font-weight: bolder;
+  }
+  .aboutme{
+    
+    border-radius: 25px;
+    border: 2px solid #73AD21; 
+    width: 63%;
+    height: 35%; 
+    float: left;
+    padding:2%;
+    position: absolute;
+    margin-top: 5%;
+  }
+  .skills{
+    
+    border-radius: 25px;
+    border: 2px solid #73AD21; 
+    width: 63%;
+    height: 30%; 
+    float: left;
+    padding:2%;
+    position: absolute;
+    margin-top: 0%;
+  }

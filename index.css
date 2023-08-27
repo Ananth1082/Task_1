@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("Login\ Page.jpg");
+    }
+    #webform{
+    display: none;
+    padding: 20px;
+    position: absolute;
+    margin-left: 40%;
+    margin-top:10%;
+    background-color: aqua;
+    height:40%;
+    width:20%;
+    padding-left: 2%;
+    }
+    nav {
+    margin-bottom: 20px;
+    background-color: #0fc8e0;
+    padding: 20px;
+    color: white;
+
+    }
+    nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 5px;
+    }
+    nav a.active {
+    background-color: rgb(255, 253, 253);
+    color: white;
+    }
+    .project-item, .skill-item {
+    margin-bottom: 15px;
+    }
+    #thank-you-message {
+        display: none;
+      }
+      
+      #thank-you-message.show {
+        display: block;
+      }
